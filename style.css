@@ -11,54 +11,45 @@ h2{
     text-align: center;
 }
 
+p{
+    padding: 10px;
+}
+#small, #medium, #large{
+    border: 1px solid white;
+    border-radius: 25px;
+    background-color: white;
+}
 
 /* ecran plus petit que 410 px*/
 @media screen and (max-width: 410px) {
     body{
         background-color: red;
-    }
-
-    #medium{
-        display: none;
-    }
-
-    #large{
-        display: none;
-    }
-
-    #small{
         font-size: 10px;
-    }
-
-    #small1, #small2, #small3{
         display: grid;
         grid-template-columns: 1fr;
+        grid-template-rows: 3fr;
+        gap: 25px;
+    
     }
 }
+   
 
 
 /* ecran entre 410px et 768px*/
 @media screen and (min-width: 410px) and (max-width: 768px){
     body{
         background-color: green;
-    }
-
-    #small{
-        display: none;
-    }
-
-    #large{
-        display: none;
-    }
-
-    #medium{
-        font-size: 20px;
-    }
-
-    #medium1-2{
         display: grid;
         grid-template-columns: 2fr 1fr;
-        grid-template-rows: auto;
+        grid-template-rows: 2fr;
+        gap: 25px;
+        font-size: 20px;
+    }
+    #large{
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 5;
     }
 }
 
@@ -66,24 +57,12 @@ h2{
 /*ecran plus grand que 768px*/
 @media screen and (min-width: 768px) {
     body{
-        background-color: blue
-    }
-
-    #small{
-        display: none;
-    }
-
-    #medium{
-        display: none;
-    }
-   
-    #large{
-        font-size: 30px;
-    }
-    
-    #large1-2-3{
+        background-color: blue;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto;
+        gap: 25px;
+        font-size: 30px;
+        
     }
 }
