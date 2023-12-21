@@ -29,7 +29,6 @@ p{
         grid-template-columns: 1fr;
         grid-template-rows: 3fr;
         gap: 25px;
-    
     }
 }
    
@@ -60,9 +59,8 @@ p{
         background-color: blue;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto;
+        grid-template-rows: 2fr;
         gap: 25px;
         font-size: 30px;
-        
     }
 }
